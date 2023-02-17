@@ -4,6 +4,8 @@ txt = '''ORIGIN
        61 lqvgqvelgg gpgagslqpl alegslqkrg iveqcctsic slyqlenycn
 //
 '''
+
+#extract preproinsulin sequence
 pattern = '[^a-z]'
 insulin = re.sub(pattern, "", txt)
 print(insulin)
