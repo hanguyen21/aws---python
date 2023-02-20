@@ -4,8 +4,9 @@ txt = '''ORIGIN
        61 lqvgqvelgg gpgagslqpl alegslqkrg iveqcctsic slyqlenycn
 //
 '''
-pattern = '[^a-z]'
-insulin = re.sub(pattern, "", txt)
+
+#extract preproinsulin string
+insulin = re.sub('[^a-z]', "", txt)
 print(insulin)
 print(len(insulin))
 
