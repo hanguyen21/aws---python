@@ -1,0 +1,8 @@
+Debugging the Caesar Cipher Program
+
+From my lab, I figured out:
+Exercise 1- Line 28: cipherKey --> int(cipherKey)
+Exercise 2 - Line 25 : message --> message.upper()
+Exercise 3- Line 38: cipherKey --> decryptKey
+Exercise 4 - Line 53: {myEncryptedMessage} --> {myDecryptedMessage}
+
