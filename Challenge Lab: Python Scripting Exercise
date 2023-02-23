@@ -1,0 +1,30 @@
+Challenge Lab: Python Scripting Exercise
+ 
+  Part 1  * Python script *
+ 
+lower = int(input("Enter lower number: "))
+upper = int(input("Enter upper number: "))
+
+file = open("results.txt", "w")
+file.write("The prime numbers between " + str(lower) + " and " + str(upper) + " are :" + "\n")
+
+for num in range(lower, upper + 1):
+    if num > 1:
+        for i in range (2, num):
+            if (num % i) == 0:
+                break
+        else:
+            file.write(str(num) + "\n")
+print("The prime numbers are displayed in the results.txt file.")
+file.close()
+    * Python script *
+ 
+ 
+ Part 2: Run script on your lab VM
+ $ vi challenge.py
+ i  for insert mode
+ enter Python script 
+ <Esc>:wq! 
+ $ python challenge.py 
+ $ ls
+ $ cat results.txt 
